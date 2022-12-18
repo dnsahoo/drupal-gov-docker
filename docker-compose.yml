@@ -38,4 +38,4 @@ services:
       DBASE: "${DB}"
       USER: "${DBU}"
       PASS: "${DBP}"
-    command: bash -c "composer update && rm /var/www/html && ln -s /opt/web /var/www/html && /usr/local/bin/apache2-foreground"
+    command: bash -c "composer update && rm /var/www/html && ln -s /opt/web /var/www/html && /usr/local/bin/apache2-foreground && ln -s /opt/vendor/drush/drush/drush ./"
